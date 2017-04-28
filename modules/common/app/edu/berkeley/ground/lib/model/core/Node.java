@@ -13,7 +13,7 @@ package edu.berkeley.ground.lib.model.core;
 
 import edu.berkeley.ground.lib.model.version.Item;
 import edu.berkeley.ground.lib.model.version.Tag;
-import edu.berkeley.ground.lib.util.IdGenerator;
+//import edu.berkeley.ground.lib.util.IdGenerator;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Map;
@@ -40,7 +40,7 @@ public class Node extends Item<NodeVersion> {
     @JsonProperty("name") String name,
     @JsonProperty("source_key") String sourceKey,
     @JsonProperty("tags") Map<String, Tag> tags) {
-    
+
     super(id, tags);
 
     this.name = name;
